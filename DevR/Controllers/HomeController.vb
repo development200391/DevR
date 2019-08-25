@@ -31,7 +31,7 @@ Public Class HomeController
                 smtp.Send(ms)
             End Using
         End If
-        Return View(model)
+        Return View()
     End Function
 
 End Class
