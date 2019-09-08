@@ -7,7 +7,9 @@ Public Class HomeController
     Function Index() As ActionResult
         Return View()
     End Function
-
+    Function CreateWebsite() As ActionResult
+        Return View()
+    End Function
     Function Contact() As ActionResult
         Return View()
     End Function
@@ -31,7 +33,7 @@ Public Class HomeController
                 smtp.Send(ms)
             End Using
         End If
-        Return View()
+        Return View(model)
     End Function
 
 End Class

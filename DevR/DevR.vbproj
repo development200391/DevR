@@ -241,7 +241,7 @@
     <Content Include="Content\AboutMe\vendors\jquery-ui\jquery-ui.js" />
     <Content Include="Content\AboutMe\vendors\lightbox\simpleLightbox.css" />
     <Content Include="Content\AboutMe\vendors\lightbox\simpleLightbox.min.js" />
-    <Content Include="Content\AboutMe\vendors\linericon\fonts\Linearicons-Free.svg" />
+    <Content Include="Content\fonts\Linearicons-Free.svg" />
     <Content Include="Content\AboutMe\vendors\linericon\style.css" />
     <Content Include="Content\AboutMe\vendors\nice-select\css\nice-select.css" />
     <Content Include="Content\AboutMe\vendors\nice-select\css\style.css" />
@@ -268,10 +268,10 @@
     <Content Include="Content\AboutMe\vendors\flaticon\Flaticon.ttf" />
     <Content Include="Content\AboutMe\vendors\flaticon\Flaticon.woff" />
     <Content Include="Content\AboutMe\vendors\flaticon\_flaticon.scss" />
-    <Content Include="Content\AboutMe\vendors\linericon\fonts\Linearicons-Free.eot" />
-    <Content Include="Content\AboutMe\vendors\linericon\fonts\Linearicons-Free.ttf" />
-    <Content Include="Content\AboutMe\vendors\linericon\fonts\Linearicons-Free.woff" />
-    <Content Include="Content\AboutMe\vendors\linericon\fonts\Linearicons-Free.woff2" />
+    <Content Include="Content\fonts\Linearicons-Free.eot" />
+    <Content Include="Content\fonts\Linearicons-Free.ttf" />
+    <Content Include="Content\fonts\Linearicons-Free.woff" />
+    <Content Include="Content\fonts\Linearicons-Free.woff2" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -284,6 +284,7 @@
     </None>
     <None Include="packages.config" />
     <Content Include="Views\Home\Contact.vbhtml" />
+    <Content Include="Views\Home\CreateWebsite.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -376,7 +377,9 @@
     <Content Include="img\team\team-2.jpg" />
     <Content Include="img\team\team-3.jpg" />
     <Content Include="img\team\team-4.jpg" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

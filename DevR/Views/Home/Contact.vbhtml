@@ -12,7 +12,7 @@ End Code
                 <h2>CONTACT US</h2>
                 <div class="page_link">
                     <a href="@Url.Action("Index")">Home</a>
-                    <a href="@Url.Action("Contact")">CONTACT</a>
+                    <a>CONTACT</a>
                 </div>
 
             </div>
@@ -65,23 +65,22 @@ End Code
                         </div>
                     </div>
                     @<div Class="col-md-6">
-                         <div Class="form-group">
-                             @*<textarea Class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>*@
-                             @Html.TextAreaFor(Function(model) model.Message, New With {.htmlAttributes = New With {.class = "form-control", .placeholder = "Enter Message", .rows = "2"}})
-                             @Html.ValidationMessageFor(Function(model) model.Message, "", New With {.class = "text-danger"})
-                         </div>
+                        <div Class="form-group">
+                            @*<textarea Class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>*@
+                            @Html.TextAreaFor(Function(model) model.Message, New With {.htmlAttributes = New With {.class = "form-control", .placeholder = "Enter Message", .rows = "2"}})
+                            @Html.ValidationMessageFor(Function(model) model.Message, "", New With {.class = "text-danger"})
+                        </div>
                     </div>
                     @<div Class="col-md-12 text-right">
                         <Button type="submit" value="submit" Class="btn submit_btn">Send Message</Button>
                     </div>
                 End Using
-                @*<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-        </form>*@
             </div>
         </div>
     </div>
 </section>
 <!--================Contact Area =================-->
+
 <!--================Footer Area =================-->
 <footer class="footer_area p_120">
     <div class="container">
@@ -97,51 +96,19 @@ End Code
             <div class="col-lg-5 col-sm-6">
             </div>
             @*<div class="col-lg-2">
-                <aside class="f_widget social_widget">
-                    <div class="f_title">
-                        <h3>Follow Me</h3>
-                    </div>
-                    <p>Let us be social</p>
-                    <ul class="list">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                </aside>
-            </div>*@
+                    <aside class="f_widget social_widget">
+                        <div class="f_title">
+                            <h3>Follow Me</h3>
+                        </div>
+                        <p>Let us be social</p>
+                        <ul class="list">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </aside>
+                </div>*@
         </div>
     </div>
 </footer>
-<!--================End Footer Area =================-->
-<!--================Contact Success and Error message Area =================-->
-<div id="success" class="modal modal-message fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa fa-close"></i>
-                </button>
-                <h2>Thank you</h2>
-                <p>Your message is successfully sent...</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modals error -->
-
-<div id="error" class="modal modal-message fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa fa-close"></i>
-                </button>
-                <h2>Sorry !</h2>
-                <p> Something went wrong </p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--================End Contact Success and Error message Area =================-->

@@ -23,7 +23,12 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="@Url.Action("Index")">About Me</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("CreateWebsite")">Create Website</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact")">Contact</a></li>
                         </ul>
                     </div>
@@ -32,12 +37,21 @@
         </div>
     </header>
     @RenderBody()
-    @*<div class="container body-content">
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>*@
+    <div class="col-lg-offset-1 col-md-offset-1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row">
+            <aside id="shortcodes-ultimate-2" class="widget shortcodes-ultimate col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="textwidget">
+                    <div class="ccw_plugin sc_item" style=" position:fixed;right:10px;bottom:10px; ">
+                        <div class="client-logo">
+                            <a href="https://wa.me/6283822207153?text=Halo, saya ingin bertanya Jasa di DevR.Space">
+                                <img src="@Url.Action("icon", "img")/whatsapp-button.png" width="142" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required:=False)
