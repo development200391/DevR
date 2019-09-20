@@ -263,6 +263,14 @@
     </Content>
     <Content Include="Content\AboutMe\css\style.css.map" />
     <Content Include="img\.DS_Store" />
+    <Content Include="img\BSTK\GetPicture.png" />
+    <Content Include="img\BSTK\InputBSTK.png" />
+    <Content Include="img\BSTK\InputBSTKChecked.png" />
+    <Content Include="img\BSTK\InputBSTKFillApear.png" />
+    <Content Include="img\BSTK\ListBSTK.png" />
+    <Content Include="img\BSTK\Login.png" />
+    <Content Include="img\BSTK\Menu.png" />
+    <Content Include="img\BSTK\Signature.png" />
     <Content Include="img\elements\_DS_Store" />
     <Content Include="Content\AboutMe\vendors\.DS_Store" />
     <Content Include="Content\AboutMe\vendors\flaticon\Flaticon.eot" />
@@ -290,6 +298,19 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="img\LeasingVehicle\Application.png" />
+    <Content Include="img\LeasingVehicle\ApplicationPO.png" />
+    <Content Include="img\LeasingVehicle\Applicaton2.png" />
+    <Content Include="img\LeasingVehicle\Approval.png" />
+    <Content Include="img\LeasingVehicle\ApprovalPO.png" />
+    <Content Include="img\LeasingVehicle\Calculation.png" />
+    <Content Include="img\LeasingVehicle\Calculation2.png" />
+    <Content Include="img\LeasingVehicle\Dashboard.png" />
+    <Content Include="img\LeasingVehicle\login.jpg" />
+    <Content Include="img\LeasingVehicle\ProsCust.png" />
+    <Content Include="img\LeasingVehicle\Quotation.png" />
+    <Content Include="img\LeasingVehicle\QuotationProntut.png" />
+    <Content Include="img\LeasingVehicle\UploadSPH.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
