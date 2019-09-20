@@ -7,7 +7,23 @@ Public Class HomeController
     Function Index() As ActionResult
         Return View()
     End Function
+    Function LeasingVehicle() As ActionResult
+        Return View()
+    End Function
+    Function BSTKOnline() As ActionResult
+        Return View()
+    End Function
+    Function Portofolio() As ActionResult
+        Dim list = New List(Of ListPortofolio)
+        Dim row = New ListPortofolio With {.No = 1, .NameProject = "BSTK Online", .Program = "Android Studio (Java)", .View = "BSTKOnline"}
+        Dim row2 = New ListPortofolio With {.No = 2, .NameProject = "Leasing Vehicle", .Program = "ASP.Net MVC", .View = "LeasingVehicle"}
+        list.Add(row)
+        list.Add(row2)
+        Return View(list)
+    End Function
     Function CreateWebsite() As ActionResult
+
+
         Return View()
     End Function
     Function Contact() As ActionResult
